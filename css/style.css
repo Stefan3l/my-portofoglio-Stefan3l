@@ -1,0 +1,15 @@
+/* RESET  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* STYLE */
+
+body {
+    font-family: "Rubik", serif;
+}
+
+/* GENERALS */

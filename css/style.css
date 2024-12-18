@@ -10,6 +10,102 @@
 
 body {
     font-family: "Rubik", serif;
+    background-image: url(../img/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 /* GENERALS */
+
+.container {
+    width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-none {
+    display: none;
+}
+
+/* HEADER */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, nav {
+    padding: 1.25rem;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav ul li {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav ul li a{
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+
+
+.nav ul li i {
+    color: #fff;
+    font-size: 1.6rem;
+    transition: color .3s ease;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo .name{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    transition: color .3s ease;
+}
+
+.img-logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+/* HOVER */
+
+.nav ul li i:hover {
+    color: gray;
+}
+
+.nav ul li a:hover {
+    color: gray;
+}
+
+.logo .name:hover {
+    color: grey;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+    .name, .fa-solid {
+        display: inline;
+    }
+
+   
+}

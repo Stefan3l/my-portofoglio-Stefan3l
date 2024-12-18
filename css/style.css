@@ -14,18 +14,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    min-height: 36rem;
 }
 
 /* GENERALS */
 
 .container {
-    width: 75rem;
+    max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 .d-none {
     display: none;
+}
+
+.row-hero {
+    display: flex;
+    color: #fff;
+    gap: .625rem;
+    margin-top: 5rem;
 }
 
 /* HEADER */
@@ -84,6 +92,14 @@ body {
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
+}
+
+/* MAIN */
+
+
+.col {
+   max-width: 100%;
+   
 }
 
 /* HOVER */

@@ -10,9 +10,10 @@
 
 body {
     font-family: "Roboto", serif;
-    background: linear-gradient(270deg, #ff7eb3, #ff758c, #ff9472);
+    background: linear-gradient(270deg, #48e3ff, #1a9ea1, #507fa1);
     background-size: 400% 400%;
     animation: gradient-animation 6s ease infinite;
+    padding: 1.25rem;
 }
 
 @keyframes gradient-animation {
@@ -97,6 +98,7 @@ body {
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
+    border: none;
 }
 
 /* MAIN */
@@ -108,7 +110,7 @@ body {
 }
 
 .about-col {
-    margin-top: 2.5rem;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -128,8 +130,8 @@ h1 > mark {
 .badge {
     border: 1px solid black;
     border-radius: .625rem;
-    margin-top: 1.125rem;
-    margin-bottom: 1.125rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     background-color: #49e1ff;
     padding: .625rem;
 }
@@ -139,6 +141,26 @@ h1 > mark {
     text-decoration: none;
     font-weight: bold;
     color: #213346;
+}
+
+.about-col p {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+/* FOOTER */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    margin-top: 3.75rem;
+}
+
+.contact .btn {
+    display: flex;
+    gap: .375rem;
 }
 
 
@@ -164,5 +186,8 @@ h1 > mark {
         display: inline;
     }
 
+    .nav ul {
+        gap: 1.25rem;
+    }
    
 }

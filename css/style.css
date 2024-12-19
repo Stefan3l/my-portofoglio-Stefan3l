@@ -9,13 +9,17 @@
 /* STYLE */
 
 body {
-    font-family: "Rubik", serif;
-    background-image: url(../img/background-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    min-height: 36rem;
+    font-family: "Roboto", serif;
+    background: linear-gradient(270deg, #ff7eb3, #ff758c, #ff9472);
+    background-size: 400% 400%;
+    animation: gradient-animation 6s ease infinite;
 }
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
 /* GENERALS */
 
@@ -51,17 +55,17 @@ body {
 .nav ul{
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 1.875rem;
 }
 
 .nav ul li {
     display: flex;
-    gap: 1rem;
+    gap: .375rem;
 }
 
 .nav ul li a{
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.125rem;
     text-decoration: none;
     transition: color .3s ease;
 }
@@ -70,7 +74,7 @@ body {
 
 .nav ul li i {
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.125rem;
     transition: color .3s ease;
 }
 

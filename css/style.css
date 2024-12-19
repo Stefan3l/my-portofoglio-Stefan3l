@@ -38,6 +38,7 @@ body {
     color: #fff;
     gap: .625rem;
     margin-top: 5rem;
+    padding: 0rem 1.25rem;
 }
 
 /* HEADER */
@@ -102,22 +103,58 @@ body {
 
 
 .col {
-   max-width: 100%;
-   
+   width: 100%;
+   display: flex;
 }
+
+.about-col {
+    margin-top: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-work {
+    border-radius: 14%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 > mark {
+    color: #213346;
+    background-color: transparent;
+}
+
+.badge {
+    border: 1px solid black;
+    border-radius: .625rem;
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem;
+    background-color: #49e1ff;
+    padding: .625rem;
+}
+
+.badge > a {
+    padding: .625rem 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #213346;
+}
+
+
 
 /* HOVER */
 
 .nav ul li i:hover {
-    color: gray;
+    color: #2bb9f9;
 }
 
 .nav ul li a:hover {
-    color: gray;
+    color: #2bb9f9;
 }
 
 .logo .name:hover {
-    color: grey;
+    color: #2bb9f9;
 }
 
 /* RESPONSIVE */

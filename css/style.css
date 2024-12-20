@@ -153,17 +153,44 @@ h1 > mark {
 .contact {
     display: flex;
     justify-content: center;
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
+    flex-wrap: wrap;
     margin-top: 3.75rem;
+    gap: 1.25rem;
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
 }
 
 .contact .btn {
     display: flex;
-    gap: .375rem;
+    gap: .5rem;
+    font-size: 1.25rem;
 }
 
+.contact .btn .fa-facebook {
+    color: #3b5998;
+}
 
+.contact .btn .fa-instagram {
+    color: #8134AF;
+}
+
+.contact .btn .fa-whatsapp {
+    color: #25D366;
+}
+
+.contact .btn .fa-tiktok {
+    color: #010101;
+}
+
+.contact .btn .fa-linkedin {
+    color: #0e76e8;
+}
+
+.contact .btn a {
+    text-decoration: none;
+    color: black;
+}
 
 /* HOVER */
 
@@ -179,6 +206,33 @@ h1 > mark {
     color: #2bb9f9;
 }
 
+/* HOVER SOCIAL-MEDIA */
+
+.contact .btn .facebook:hover {
+    color: #3b5998;
+    font-weight: bold;
+}
+
+.contact .btn .instagram:hover {
+    color: #8134AF;
+    font-weight: bold;
+}
+
+.contact .btn .whatsapp:hover {
+    color: #25D366;
+    font-weight: bold;
+}
+
+.contact .btn .tik-tok:hover {
+    color: #010101;
+    font-weight: bold;
+}
+
+.contact .btn .linkedin:hover {
+    color: #3b5998;
+    font-weight: bold;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 768px) {
@@ -189,5 +243,13 @@ h1 > mark {
     .nav ul {
         gap: 1.25rem;
     }
+
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+    }
    
+    .contact .btn a {
+        display: inline-block;
+    }
 }

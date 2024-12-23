@@ -1,6 +1,7 @@
-// DOM ELEMENTS
+// DOM ELEMENTS SKILLS
 
 const btnConfettiElm = document.getElementById('btn-confetti')
+
 
 
 // BTN EVENTS
@@ -8,7 +9,6 @@ const btnConfettiElm = document.getElementById('btn-confetti')
 
 btnConfettiElm.addEventListener("click", function(event) {      
     event.preventDefault()
-    btnConfettiElm.innerHTML = 'Confetti'
     var defaults = {
         spread: 360,
         ticks: 50,
@@ -36,6 +36,10 @@ btnConfettiElm.addEventListener("click", function(event) {
       
       setTimeout(shoot, 0);
       setTimeout(shoot, 100);
-      setTimeout(shoot, 200);
-     
+      setTimeout(shoot, 200);   
 })  
+
+ 
+
+
+

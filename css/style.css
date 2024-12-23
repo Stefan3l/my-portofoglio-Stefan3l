@@ -148,6 +148,167 @@ h1 > mark {
     padding-left: 1.25rem;
 }
 
+/* MAIN PAGE SKILL */
+
+.container-btn {
+    max-width: 50rem;
+    margin: auto;
+}
+
+
+.container-btn .row-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .625rem;
+    margin-top: 4.375rem;
+}
+
+
+.container-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-btn .row-btn {
+    width: 100%;
+}
+
+.container-btn .row-btn .btn {
+    width: calc((100% - 20px) / 3)
+}
+
+.container-btn .button {
+    padding: 1.25rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+}
+
+/* SKILLS BUTTONS MAIN */
+
+.title-btn {
+    text-align: center;
+    margin-top: 4.375rem;
+}
+
+.title-btn > h1 {
+    font-size: 2.125rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6161, #471b9a, #d034db, #2ecc71);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s infinite ease-in-out;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.row-btn .btn .btn-primary {
+    background-color: red;  
+    border-radius: .625rem;
+    transition: background-color 0.5s ease;
+}
+
+.row-btn .btn .btn-primary:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.row-btn .btn .btn-secondary {
+    background-color: #0056b3;
+    transition: background-color 0.5s ease;
+    border: dashed;
+    border-color: #fff;
+}
+
+.row-btn .btn .btn-secondary:hover {
+    cursor: pointer;
+    border: none;
+    background-color: #25D366;
+}
+
+.row-btn .btn .btn-third {
+    background: linear-gradient(90deg, #ff6f61, #6a1b9a, #3498db, #2ecc71);
+    animation: moveBackground 5s infinite linear;
+    border-radius: 3.125rem;
+}
+
+@keyframes moveBackground {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100%  {
+        background-position: 0% 50%;
+    }
+}
+
+.row-btn .btn .btn-third:hover {
+    transform: translateY(2px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.row-btn .btn .btn-fourth > a {
+    color: #000;
+}
+
+.row-btn .btn .btn-fourth {
+    background-color: yellow;
+    border-radius: 1.25rem;
+    transition: background-color 0.5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.row-btn .btn .btn-fourth:hover {
+    background-color: rgb(210, 200, 0);
+    cursor: pointer;
+}
+
+.row-btn .btn .btn-fifth > a {
+    color: #000;
+}
+
+.row-btn .btn .btn-fifth{
+    background-color: #f10fd3;
+    transition: background-color 0.5s ease;
+    border-radius: 3.125rem;
+}
+
+.row-btn .btn .btn-fifth:hover {
+    background-color: #0fadf1;
+    cursor: pointer;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.row-btn .btn .btn-sixth {
+    background-color: chocolate;
+    transition: background-color 0.5s ease;
+}
+
+.row-btn .btn .btn-sixth:hover {
+    background-color: rgb(210, 42, 30);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
 /* FOOTER */
 
 .contact {

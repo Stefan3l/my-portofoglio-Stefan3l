@@ -1,43 +1,22 @@
-// DOM ELEMENTS SKILLS
+// DOM ELEMENTS PAGE SKILLS
 
-const btnConfettiElm = document.getElementById('btn-confetti')
+const imgCarouselElm = document.getElementById('carousel-img');
+const imagesElm = document.querySelectorAll('.carousel-images img');
+const nextBtnElm = document.getElementById('next-btn');
+const prevBtnElm = document.getElementById('prev-btn');
 
+let index = 0;
 
+nextBtnElm.addEventListener('click', () => {
+    index = (index + 1) % imagesElm.length;
+    imgCarouselElm.style.transform = `translate(-${index * 100}%)`;
 
-// BTN EVENTS
+});
 
-
-btnConfettiElm.addEventListener("click", function(event) {      
-    event.preventDefault()
-    var defaults = {
-        spread: 360,
-        ticks: 50,
-        gravity: 0,
-        decay: 0.94,
-        startVelocity: 30,
-        colors: ['FFE400', 'FFBD00', 'E89400', 'FFCA6C', 'FDFFB8']
-      };
-      
-      function shoot() {
-        confetti({
-          ...defaults,
-          particleCount: 40,
-          scalar: 1.2,
-          shapes: ['star']
-        });
-      
-        confetti({
-          ...defaults,
-          particleCount: 10,
-          scalar: 0.75,
-          shapes: ['circle']
-        });
-      }
-      
-      setTimeout(shoot, 0);
-      setTimeout(shoot, 100);
-      setTimeout(shoot, 200);   
-})  
+prevBtnElm.addEventListener('click', () => {
+    index = (index - 1 + imagesElm.length) % imagesElm.length;
+    imgCarouselElm.style.transform = `translate(-${index * 100}%)`;
+})
 
  
 

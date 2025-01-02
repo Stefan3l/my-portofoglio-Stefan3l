@@ -115,6 +115,10 @@ body {
     align-items: center;
 }
 
+.about-col > h1 {
+    padding-left: 1.25rem;
+}
+
 .img-work {
     border-radius: 14%;
     display: block;
@@ -377,7 +381,7 @@ hr {
 /* MAIN PAGE CONTACT */
 
 .container-contact {
-    width: 62.5rem;
+    max-width: 62.5rem;
     margin: auto;
     margin-top: 5.625rem;
     display: flex;
@@ -394,6 +398,7 @@ hr {
     padding: 20px;
     border-radius: 1.25rem;
 }
+
 
 .container-contact .btn a {
     text-decoration: none;
@@ -473,6 +478,33 @@ hr {
 .container-contact .add-comment h2 {
     text-align: center;
     font-size: 1.25rem;
+}
+
+/* MAIN PAGE ABOUT */
+
+.title-about {
+    text-align: center;
+    margin-top: 3.125rem;
+}
+
+.text-me {
+    margin-top: 1.875rem;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+    
+}
+
+.image-about {
+    margin-top: 1.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+.image-about img {
+    border-radius: 1.875rem;
+    max-width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 /* FOOTER */

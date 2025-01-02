@@ -8,26 +8,31 @@ const prevBtnElm = document.getElementById('prev-btn');
 let index = 0;
 
 // EVENTS PAGE SKILLS
+if(nextBtnElm) {
+nextBtnElm.addEventListener('click', (event) => {
+    event.preventDefault();
+    index = (index + 1) % imagesElm.length;
+    imgCarouselElm.style.transform = `translate(-${index * 100}%)`;
 
-// nextBtnElm.addEventListener('click', () => {
-//     index = (index + 1) % imagesElm.length;
-//     imgCarouselElm.style.transform = `translate(-${index * 100}%)`;
+})
+};
 
-// });
-
-// prevBtnElm.addEventListener('click', () => {
-//     index = (index - 1 + imagesElm.length) % imagesElm.length;
-//     imgCarouselElm.style.transform = `translate(-${index * 100}%)`;
-// })
+if(prevBtnElm) {
+prevBtnElm.addEventListener('click', (event) => {
+    event.preventDefault();
+    index = (index - 1 + imagesElm.length) % imagesElm.length;
+    imgCarouselElm.style.transform = `translate(-${index * 100}%)`;
+})
+};
 
 
 // DOM ELEMENTS PAGE CONTACT
 
-const addCommElm = document.getElementById('com-add')
-const formELm = document.getElementById('form')
-const nameElm = document.getElementById('name')
-const textCommElm = document.getElementById('text-comment')
-const buttonSubmitElm = document.getElementById('submit')
+const addCommElm = document.getElementById('com-add');
+const formELm = document.getElementById('form');
+const nameElm = document.getElementById('name');
+const textCommElm = document.getElementById('text-comment');
+const buttonSubmitElm = document.getElementById('submit');
 
 
 const message = "";
@@ -37,7 +42,8 @@ formELm.addEventListener('submit', function(event) {
     const textStyled = `<span style="font-size: 18px; font-weight: bold;">${textCommElm.value}</span>`;
     const message = `${nameStyled}: ${textStyled}`;
     addCommElm.innerHTML = message;
-});
+})
+
 
 
 

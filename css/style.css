@@ -247,6 +247,7 @@ h1 {
     background-color: #25D366;
 }
 
+
 .row-btn .btn .btn-third {
     background: linear-gradient(90deg, #ff6f61, #6a1b9a, #3498db, #2ecc71);
     animation: moveBackground 5s infinite linear;
@@ -373,6 +374,106 @@ hr {
     font-weight: bold;
 }
 
+/* MAIN PAGE CONTACT */
+
+.container-contact {
+    width: 62.5rem;
+    margin: auto;
+    margin-top: 5.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.container-contact .btn {
+    display: flex;
+    gap: .625rem;
+    justify-content: center;
+    font-size: 2.5rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 1.25rem;
+}
+
+.container-contact .btn a {
+    text-decoration: none;
+}
+
+.container-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.container-contact form input {
+    display: block;
+    margin-top: .625rem;
+    padding: .625rem;
+    border-radius: .625rem;
+    border: none;
+}
+
+.container-contact form textarea {
+    display: block;
+    margin-top: .625rem;
+    padding: .625rem;
+    border-radius: .625rem;
+    border: none;
+}
+
+.container-contact form label {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.container-contact form .comment {
+    width: 100%;
+}
+
+.container-contact form .comment > textarea{
+    width: 100%;
+    min-height: 12.5rem;
+    font-size: 1.5rem;
+}
+
+.container-contact form .checkbox {
+    display: flex;
+    align-items: baseline;
+    gap: .625rem;
+}
+
+.container-contact form .check-box {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.container-contact form button {
+    padding: 1.25rem;
+    border: none;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.container-contact form button:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+.container-contact .add-comment {
+    background-color: #fff;
+    padding: .625rem;
+    border-radius: .625rem;
+    font-size: 18px;   
+}
+
+.container-contact .add-comment h2 {
+    text-align: center;
+    font-size: 1.25rem;
+}
 
 /* FOOTER */
 
@@ -393,27 +494,27 @@ hr {
     font-size: 1.25rem;
 }
 
-.contact .btn .fa-facebook {
+.btn .fa-facebook {
     color: #3b5998;
 }
 
-.contact .btn .fa-instagram {
+.btn .fa-instagram {
     color: #8134AF;
 }
 
-.contact .btn .fa-whatsapp {
+.btn .fa-whatsapp {
     color: #25D366;
 }
 
-.contact .btn .fa-tiktok {
+.btn .fa-tiktok {
     color: #010101;
 }
 
-.contact .btn .fa-linkedin {
+.btn .fa-linkedin {
     color: #0e76e8;
 }
 
-.contact .btn a {
+.btn a {
     text-decoration: none;
     color: black;
 }
@@ -434,27 +535,27 @@ hr {
 
 /* HOVER SOCIAL-MEDIA */
 
-.contact .btn .facebook:hover {
+.btn .facebook:hover {
     color: #3b5998;
     font-weight: bold;
 }
 
-.contact .btn .instagram:hover {
+.btn .instagram:hover {
     color: #8134AF;
     font-weight: bold;
 }
 
-.contact .btn .whatsapp:hover {
+.btn .whatsapp:hover {
     color: #25D366;
     font-weight: bold;
 }
 
-.contact .btn .tik-tok:hover {
+.btn .tik-tok:hover {
     color: #010101;
     font-weight: bold;
 }
 
-.contact .btn .linkedin:hover {
+.btn .linkedin:hover {
     color: #3b5998;
     font-weight: bold;
 }
@@ -475,7 +576,7 @@ hr {
         justify-content: space-evenly;
     }
    
-    .contact .btn a {
+    .btn a {
         display: inline-block;
     }
 }

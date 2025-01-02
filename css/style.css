@@ -339,8 +339,7 @@ hr {
 }
 
 .carousel {
-    width: 80%;
-    max-width: 37.5rem;
+    max-width: 80%;
     position: relative;
     overflow: hidden;
     border-radius: .625rem;
@@ -377,6 +376,7 @@ hr {
     font-size: 1.25rem;
     font-weight: bold;
 }
+
 
 /* MAIN PAGE CONTACT */
 

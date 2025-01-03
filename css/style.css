@@ -644,5 +644,9 @@ hr {
         font-size: .875rem;
     }
 
+    .logo, nav {
+        padding: 1.25rem .25rem;
+    }
+
     
 }

@@ -153,6 +153,22 @@ h1 > mark {
     color: #213346;
 }
 
+.badge-contact {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+
+.badge-hireMe {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 1.25rem;
+}
+
 .about-col p {
     padding-right: 1.25rem;
     padding-left: 1.25rem;

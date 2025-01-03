@@ -650,5 +650,9 @@ hr {
         gap: 1rem;
     }
 
+    .logo, nav {
+        padding: 0;
+    }
+
     
 }

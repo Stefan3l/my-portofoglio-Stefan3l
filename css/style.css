@@ -409,7 +409,7 @@ hr {
     display: flex;
     gap: .625rem;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     background-color: #fff;
     padding: 20px;
     border-radius: 1.25rem;
@@ -616,7 +616,7 @@ hr {
     }
 
     .nav ul {
-        gap: 1.25rem;
+        gap: .625rem;
     }
 
     .contact {
@@ -627,4 +627,14 @@ hr {
     .btn a {
         display: inline-block;
     }
+
+}
+
+@media screen and (max-width: 768px) {
+    .row-hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 }

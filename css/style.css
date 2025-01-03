@@ -634,6 +634,7 @@ hr {
     .row-hero {
         display: flex;
         flex-direction: column;
+        gap: 1.25rem;
     }
 
     .badge-hireMe {
@@ -644,8 +645,9 @@ hr {
         font-size: .875rem;
     }
 
-    .logo, nav {
-        padding: 1.25rem .25rem;
+
+    .nav ul {
+        gap: 1rem;
     }
 
     

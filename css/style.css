@@ -493,7 +493,7 @@ hr {
 
 .container-contact .add-comment h2 {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 /* MAIN PAGE ABOUT */
@@ -505,7 +505,7 @@ hr {
 
 .text-me {
     margin-top: 1.875rem;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     text-align: center;
     line-height: 1.5;
     
@@ -571,10 +571,12 @@ hr {
 
 .nav ul li i:hover {
     color: #2bb9f9;
+    font-weight: bold;
 }
 
 .nav ul li a:hover {
     color: #2bb9f9;
+    font-weight: bold;
 }
 
 .logo .name:hover {
@@ -616,7 +618,7 @@ hr {
     }
 
     .nav ul {
-        gap: .625rem;
+        gap: 1rem;
     }
 
     .contact {

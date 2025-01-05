@@ -502,6 +502,11 @@ hr {
     font-size: 1rem;
 }
 
+#confirmation-message {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
 /* MAIN PAGE ABOUT */
 
 .title-about {

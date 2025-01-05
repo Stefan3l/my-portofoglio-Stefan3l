@@ -355,6 +355,7 @@ hr {
 .images {
     display: flex;
     justify-content: center;
+    margin-bottom: 2.5rem;
 }
 
 .carousel {
@@ -373,6 +374,12 @@ hr {
     width: 100%;
     flex-shrink: 0;
     height: 31.25rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.carousel-images img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
 }
 
 .carousel .carousel-buttons {
@@ -397,6 +404,48 @@ hr {
 
 .carousel-buttons button:hover {
     background-color: grey;
+}
+
+/* MAIN PAGE SKILL */
+
+.skill-bar {
+    margin: .9375rem 2.5rem;
+}
+
+.skill-bar label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .3125rem;
+    display: block;
+}
+
+.bar-container {
+    background: #ccc;
+    border-radius: 1.5625rem;
+    overflow: hidden;
+    height: 1.25rem;
+}
+
+.bar {
+    background: #0078ff;
+    height: 100%;
+    text-align: right;
+    line-height: 1.25rem;
+    color: #fff;
+    padding-right: .3125rem;
+    border-radius: 1.5625rem;
+}
+
+.bar-css {
+    width: 75%;
+}
+
+.bar-html {
+    width: 90%;
+}
+
+.bar-js {
+    width: 60%;
 }
 
 

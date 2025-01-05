@@ -519,15 +519,67 @@ hr {
 
 .image-about {
     margin-top: 1.875rem;
+    margin-bottom: 2.5rem;
     display: flex;
     justify-content: center;
 }
 
 .image-about img {
     border-radius: 1.875rem;
-    max-width: 80%;
+    max-width: 60%;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
+
+.separator {
+    width: 100%;
+    margin: 1.875rem auto;
+    border-top: .125rem solid #ffffff;
+    opacity: 0.5;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills-list li {
+    display: inline-block;
+    background: #0056b3;
+    color: #fff;
+    padding: .5rem .9375rem;
+    margin: .3125rem;
+    margin-top: 1.875rem;
+    border-radius: 1.25rem;
+    font-size: .9375rem;
+    transition: transforme 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.skills-list li:hover {
+    transform: scale(1.1);
+    background: #FFA500;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem;
+    font-size: 1.25rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #FFD700;
+    margin: 0 .375rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FFA500;
+}
+
 
 /* FOOTER */
 
@@ -578,6 +630,30 @@ hr {
     margin: 2.5rem;
     font-size: 1rem;
     font-weight: bold;
+}
+
+/* FOOTER PAGE ABOUT */
+
+.call-me {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.call-me  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFD700;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    padding: .3125rem .625rem;
+}
+
+.call-me  a:hover {
+    color:  #FFA500;
+    transform: scale(1.1);
 }
 
 /* HOVER */
@@ -669,6 +745,8 @@ hr {
         padding: 0;
     }
 
-
+    .call-me {
+        text-align: center;
+    }
     
 }
